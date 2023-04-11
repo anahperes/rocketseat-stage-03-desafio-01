@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Staatliches&display=swap" rel="stylesheet">
+
+    <!-- DETAILS -->
+    <title>Mentoria Rocket</title>
+
+    <!-- CONNECT TO CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- HEADER -->
+    <header>
+        <h1>MENTORIA</h1>
+        <p>Preencha o formulário abaixo para agendar a sua mentoria</p>
+    </header>
+
+    <!-- FORM -->
+    <form action="" id="mentorship">
+        <!-- INFORMAÇÕES PESSOAIS -->
+        <fieldset>
+            <legend>Informações pessoais</legend>
+
+            <div class="two-col">
+                <div class="input-wrapper">
+                    <label for="mentorship-name">Nome</label>
+                    <input type="text" name="" id="mentorship-name" required>
+                </div>
+
+                <div class="input-wrapper">
+                    <label for="mentorship-surname">Sobrenome</label>
+                    <input type="text" name="" id="mentorship-surname" required>
+                </div>
+            </div>
+
+            <div class="input-wrapper">
+                <label for="mentorship-email">Email<span>(digite um email válido)</span></label>
+                <input type="email" name="" id="mentorship-email" required minlength="6">
+            </div>
+
+            <div class="input-wrapper">
+                <label for="mentorship-password">Senha<span>(mínimo de 6 caracteres)</span></label>
+                <input type="password" name="" id="mentorship-password" required>
+            </div>
+        </fieldset>
+
+        <!-- INFORMAÇÕES DO MENTOR -->
+        <fieldset>
+            <legend>Informações do mentor</legend>
+
+            <div class="input-wrapper">
+                <label for="mentorship-mentor-name">Nome do seu mentor<span>(só o primeiro nome)</span></label>
+                <input type="text" name="" id="mentorship-mentor-name" required>
+            </div>
+        </fieldset>
+
+        <!-- SEUS HORÁRIOS DISPONÍVEIS -->
+        <fieldset>
+            <legend>Seus horários disponíveis</legend>
+
+            <h2>Primeira mentoria</h2>
+
+            <div class="three-col">
+                <div class="input-wrapper">
+                    <label for="mentorship-first-date">Data<span>(DD/MM/AAAA)</span></label>
+                    <input type="date" name="" id="mentorship-first-date" required>
+                </div>
+
+                <div class="input-wrapper">
+                    <label for="mentorship-first-start">Das</label>
+                    <input type="time" name="" id="mentorship-first-start" required>
+                </div>
+
+                <div class="input-wrapper">
+                    <label for="mentorship-first-end">Até</label>
+                    <input type="time" name="" id="mentorship-first-end" required>
+                </div>
+            </div>
+            
+            <h2>Segunda mentoria</h2>
+
+            <div class="three-col">
+                <div class="input-wrapper">
+                    <label for="mentorship-first-date">Data<span>(DD/MM/AAAA)</span></label>
+                    <input type="date" name="" id="mentorship-first-date">
+                </div>
+
+                <div class="input-wrapper">
+                    <label for="mentorship-first-start">Das</label>
+                    <input type="time" name="" id="mentorship-first-start">
+                </div>
+
+                <div class="input-wrapper">
+                    <label for="mentorship-first-end">Até</label>
+                    <input type="time" name="" id="mentorship-first-end">
+                </div>
+            </div>
+        </fieldset>
+    </form>
+
+    <!-- SUBMIT BUTTON -->
+    <div class="button">
+        <input type="submit" value="SALVAR" form="mentorship">
+    </div>
+</body>
+</html>

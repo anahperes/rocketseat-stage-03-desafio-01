@@ -1,0 +1,218 @@
+
+/* BODY SETUP */
+body {
+    margin: 0;
+    padding: 0;
+    background: #EFEFEF;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    height: 1930px;
+}
+
+/* CREATION OF HEADER BACKGROUND */
+body::before {
+    content: '';
+    width: 100%;
+    height: 436px;
+    background: #535971;
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/* HEADER H1 TEXT STYLE + SETUP */
+h1 {
+    font-family: 'Staatliches', cursive;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 60px;
+    color: #FFFFFF;
+    margin-bottom: 18px;
+}
+
+/* THREE COL H2 TEXT STYLE + SETUP */
+h2 {
+    font-family: 'Staatliches', cursive;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 34px;
+    color: #535971;
+    margin-top: 16px;
+    margin-bottom: 8px;
+    box-sizing: border-box;
+}
+
+/* HEADER PARAGRAPH TEXT STYLE + SETUP */
+p {
+    font-size: 20px;
+    line-height: 30px;
+    color: #FFFFFF;
+    width: 417px;
+}
+
+/* FORM SETUP */
+form {
+    width: 750px;
+    min-height: 1084px;
+    background: #FFFFFF;
+    border-radius: 20px 20px 0px 0px;
+    margin: auto;
+    padding: 64px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    box-sizing: border-box;
+}
+
+/* HEADER SETUP */
+header {
+    width: 750px;               /* PRECISA TER O MESMO WIDTH DO FORM PARA O ALINHAMENTO FICAR CORRETO */
+    margin: 140px auto 60px;
+  
+}
+
+/* REMOVE BORDER OF FIELDSET */
+fieldset {
+    border: none;
+}
+
+/* INPUT WRAPPER SETUP */
+.input-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-top: 16px;               /* MARGIN FROM TOP LABEL TO LEGEND */
+}
+
+/* THREE COL MARGIN TOP REMOVE */
+.three-col .input-wrapper {
+    margin-top: 0px;
+}
+
+/* INPUT SETUP */
+.input-wrapper input {
+    height: 56px;
+    background: #FAFAFC;
+    border: 1px solid #E6E6F0;
+    border-radius: 8px;
+    width: 100%;
+    padding-left: 10px;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    color: #C1BCCC;
+}
+
+/* INPUT BEHAVIOUR WHEN IN FOCUS */
+input:focus {
+    color: #5a585f;
+    outline: 1px solid #5a585f;;
+}
+
+/* INPUT BEHAVIOUR WHEN INVALID */
+input:invalid {
+    border: 1px solid red;
+}
+
+/* TWO COL SETUP */
+.two-col {
+    display: flex;
+    gap: 22px;
+}
+
+/* SELECTION OF 1ST DIV BENEATH TWO COL */
+.two-col > div:nth-child(1) {
+    width: 100%;
+}
+
+/* SELECTION OF 2ND DIV BENEATH TWO COL */
+.two-col > div:nth-child(2) {
+    width: 100%;
+}
+
+/* LEGEND SETUP */
+legend {
+    font-family: 'Staatliches', cursive;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 34px;
+    color: #535971;
+    padding-bottom: 16px;
+    border-bottom: 1px solid #E6E6F0;
+    width: 100%;
+}
+
+/* THREE COL SETUP */
+.three-col {
+    display: flex;
+    gap: 10px;
+}
+
+/* SELECTION OF 1ST DIV BENEATH THREE COL */
+.three-col > div:nth-child(1) {
+    width: 100%;
+}
+
+/* SELECTION OF 2ND DIV BENEATH THREE COL */
+.three-col > div:nth-child(2) {
+    width: 50%;
+    margin-left: 20px;
+}
+
+/* SELECTION OF 3RD DIV BENEATH THREE COL */
+.three-col > div:nth-child(3) {
+    width: 50%;
+}
+
+/* LABEL SETUP */
+label {
+    font-size: 14px;
+    line-height: 24px;
+    color: #4E4958;
+}
+
+/* SPAN SETUP */
+label span {
+    font-size: 12px;
+    line-height: 20px;
+    color: #C1BCCC;
+    margin-left: 6px;
+}
+
+/* SPAN SETUP WHILE ON HOVER */
+span:hover {
+    color: #5a585f;
+}
+
+/* SUBMIT BUTTON BACKGROUND SETUP */
+.button {
+    width: 750px;
+    height: 160px;
+    background: #535971;
+    margin: auto;
+    border-radius: 0px 0px 20px 20px;
+}
+
+/* SUBMIT BUTTON SETUP */
+.button input {
+    padding: 15px 280px;
+    margin: 50px 70px;
+    background: #FF5374;
+    border: 0;
+    border-radius: 20px;
+    color: #FFFFFF;
+    font-family: 'Staatliches', cursive;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 26px;
+}
+
+/* SUBMIT BUTTON WHILE ON HOVER */
+.button input:hover {
+    background: #e44b6a;
+}
+
+/* SUBMIT BUTTON WHILE IN FOCUS */
+.button input:focus {
+    outline: 1px solid #afaab8;;
+}
